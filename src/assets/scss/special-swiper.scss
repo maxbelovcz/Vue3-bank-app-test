@@ -1,0 +1,70 @@
+.special-swiper{
+    position: relative;
+    width: 100%;
+}
+.special-item__body{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: calc(100% - 60px);
+    padding: 20px 30px;
+}
+.special-item__description{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    width: 48%;
+    & h1 {
+        color: white;
+        font-family: $PantonRegular;
+        font-size: 30px;
+        font-style: normal;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    & p {
+        color: white;
+        font-family: $PantonRegular;
+        font-size: 22px;
+        font-style: normal;
+        line-height: normal;
+    }
+}
+.special-item__img{
+    position: relative;
+    width: 48%;
+    overflow: hidden;
+    border-radius: 10px;
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.special-item__buttons{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 100%;
+    & a {
+        color: white;
+        font-family: $PantonRegular;
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+        text-decoration: none;
+        transition: all 0.3s ease-in;
+        &:hover{
+            text-decoration: underline;
+            color: green;
+            transition: all 0.3s ease-in;
+        }
+    }
+}

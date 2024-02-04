@@ -1,0 +1,35 @@
+.menu {
+    position: relative;
+    &__list {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+    }
+    & li {
+        text-align: center;
+    }
+    & li a {
+        display: block;
+        background-color: white;
+        padding: 20px;
+        border-radius: 30px;
+        white-space: nowrap;
+        color: black;
+        font-family: $PantonRegular;
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+        text-decoration: none;
+        width: 110px;
+        transition: all 0.3s ease-in;
+        &:hover {
+            background-color: green;
+            color: white;
+            transition: all 0.3s ease-in;
+        }
+    }
+
+}

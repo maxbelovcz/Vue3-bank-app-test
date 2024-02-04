@@ -1,0 +1,33 @@
+.button-box{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    & button{
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        color: black;
+        font-family: $PantonRegular;
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+        padding: 10px 25px;
+        border-radius: 20px;
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+        &:hover{
+            background-color: green;
+            color: white;
+            transition: all 0.3s ease-in;
+        }
+        &:active{
+            background-color: yellow;
+            color: black;
+            transition: all 0.3s ease-in;
+        }
+    }
+}

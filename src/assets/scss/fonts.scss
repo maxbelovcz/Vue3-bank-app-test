@@ -1,0 +1,26 @@
+$PantonRegular: 'Panton Regular';
+
+@font-face {
+  font-family: $PantonRegular;
+  src: url('/fonts/Panton-Regular.woff2') format('woff2'),
+       url('/fonts/Panton-Regular.woff') format('woff'),
+       url('/fonts/Panton-Regular.ttf') format('truetype');
+}
+
+$CormorantInfant: 'Cormorant infant';
+
+@font-face {
+  font-family: $CormorantInfant;
+  src: url('/fonts/CormorantInfant-Regular.woff2') format('woff2'),
+       url('/fonts/CormorantInfant-Regular.woff') format('woff'),
+       url('/fonts/CormorantInfant-Regular.ttf') format('truetype');
+}
+
+$CormorantInfantBold: 'Cormorant infant-Bold';
+
+@font-face {
+  font-family: $CormorantInfantBold;
+  src: url('/fonts/CormorantInfant-Bold.woff2') format('woff2'),
+       url('/fonts/CormorantInfant-Bold.woff') format('woff'),
+       url('/fonts/CormorantInfant-Bold.ttf') format('truetype');
+}

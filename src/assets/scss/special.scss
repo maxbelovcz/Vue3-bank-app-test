@@ -1,0 +1,14 @@
+.special{
+    position: relative;
+    max-width: 100%;
+    padding: 200px 0px 40px 0px;
+    &__wrapper{
+        display: flex;
+        position: relative;
+        align-items: center;
+        width: 100%;
+        background-color: blue;
+        padding: 25px;
+        border-radius: 20px;
+    }
+}

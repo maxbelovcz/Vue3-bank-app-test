@@ -1,0 +1,80 @@
+.exchange-rates{
+    position: relative;
+    max-width: 100%;
+    padding: 40px 0px;
+    &__wrapper{
+        display: flex;
+        position: relative;
+        align-items: center;
+        width: 100%;
+        background-color: blue;
+        padding: 25px;
+        border-radius: 20px;
+    }
+    &__rates{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 48%;
+        padding: 25px 30px;
+        gap: 30px;
+        & h2 {
+            color: white;
+            font-family: $PantonRegular;
+            font-size: 26px;
+            font-style: normal;
+            line-height: normal;
+        }
+        & a {
+            color: white;
+            font-family: $PantonRegular;
+            font-size: 16px;
+            font-style: normal;
+            line-height: normal;
+            text-decoration: none;
+            transition: all 0.3s ease-in;
+            &:hover{
+                text-decoration: underline;
+                color: green;
+                transition: all 0.3s ease-in;
+            }
+        }
+    }
+    &__img{
+        position: relative;
+        width: 48%;
+        overflow: hidden;
+        border-radius: 10px;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+.rates{
+    display: table;
+    & thead th{
+        color: white;
+        font-family: $PantonRegular;
+        font-size: 22px;
+        font-style: normal;
+        line-height: normal;
+        padding: 20px 0;
+        }
+    & th:not(:last-child){
+        padding-right: 40px;
+    }
+    & td {
+        color: white;
+        font-family: $PantonRegular;
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+        padding: 20px 0;
+    }
+    & td:not(:last-child){
+        padding-right: 40px;
+    }
+}
