@@ -6,6 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx';
 
 
 export default defineConfig({
+  base: "/Vue3-bank-app-test",
   plugins: [
     vue(),
     vueJsx()
