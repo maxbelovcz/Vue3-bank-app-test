@@ -2,16 +2,16 @@
     <section class="news">
         <div class="container">
             <div class="news__wrapper">
-                <NewsSlider />
+                <NewsBlock />
             </div>
         </div>
     </section>
 </template>
 <script>
-import NewsSlider from './NewsSlider.vue'
+import NewsBlock from './NewsBlock.vue';
 export default {
     name: 'section-news',
-    components: { NewsSlider }
+    components: { NewsBlock }
 }
 
 </script>
