@@ -5,6 +5,7 @@ import currencyExchange from './pages/currencyExchange.vue';
 import Deposits from './pages/Deposits.vue';
 import Mortgage from './pages/Mortgage.vue';
 import onlineBank from './pages/onlineBank.vue';
+import News from './pages/News.vue';
 
 const routes = [
     {
@@ -37,7 +38,13 @@ const routes = [
         path: '/onlineBank',
         name: 'onlineBank',
         component: onlineBank
+    },
+    {
+        path: '/news/:newsId',
+        name: 'News',
+        component: News
     }
+
 ]
 
 const router = createRouter({
