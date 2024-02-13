@@ -1,3 +1,4 @@
+// store.js
 import { createStore } from 'vuex';
 import { fetchSpecialsList, fetchNewsList } from './apiConfig';
 import { apiList } from './apiConstants';
