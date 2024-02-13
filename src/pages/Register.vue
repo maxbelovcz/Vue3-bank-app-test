@@ -50,9 +50,9 @@ export default {
         async submitForm() {
             try {
                 const data = await sendFormData(this.formData);
-                alert('Successfully registered:', data);
+                alert('Регистрация прошла успешно:', data);
             } catch (error) {
-                alert('Error during registration:', error);
+                alert('Ошибка при регистрации:', error);
             }
         }
     }

@@ -7,6 +7,7 @@ import Mortgage from './pages/Mortgage.vue';
 import onlineBank from './pages/onlineBank.vue';
 import News from './pages/News.vue';
 import Register from './pages/Register.vue';
+import Login from './pages/Login.vue';
 
 const routes = [
     {
@@ -49,6 +50,11 @@ const routes = [
         path: '/register',
         name: 'Register',
         component: Register
+    },
+    {
+        path: '/login',
+        name: 'Login',
+        component: Login
     }
 
 ]

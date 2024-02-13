@@ -4,5 +4,6 @@ export const apiList = {
     specialEndpoint: 'api/special',
     newsEndpoint: 'api/news?page=',
     currentPage: 1,
-    register: 'api/auth/register'
+    register: 'api/auth/register',
+    login: 'api/auth/login'
 };

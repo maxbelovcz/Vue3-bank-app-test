@@ -40,7 +40,6 @@ export const sendFormData = async (formData) => {
         }
 
         const responseData = await response.json();
-        alert('Регистрация прошла успешно');
 
         return responseData;
     } catch (error) {
@@ -48,6 +47,25 @@ export const sendFormData = async (formData) => {
     }
 };
 
+export const login = async (email, password) => {
+    try {
+        const response = await fetch(`${apiList.apiUrl}${apiList.login}?email=${email}&password=${password}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error('Ошибка во время авторизации');
+        }
+
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        throw new Error('Ошибка отправки запроса:');
+    }
+};
 
 
 

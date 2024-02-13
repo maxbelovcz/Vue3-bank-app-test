@@ -1,13 +1,14 @@
 // store.js
 import { createStore } from 'vuex';
-import { fetchSpecialsList, fetchNewsList } from './apiConfig';
+import { fetchSpecialsList, fetchNewsList, login } from './apiConfig';
 import { apiList } from './apiConstants';
 
 export default createStore({
     state: {
         specialsList: [],
         newsList: [],
-        showButton: true
+        showButton: true,
+        accessToken: ''
     },
     mutations: {
         setSpecialsList(state, data) {
@@ -18,6 +19,9 @@ export default createStore({
         },
         setShowButton(state, value) {
             state.showButton = value;
+        },
+        setAccessToken(state, token) {
+            state.accessToken = token;
         }
     },
     actions: {
@@ -45,10 +49,19 @@ export default createStore({
                 console.error(error);
             }
         },
+        async loginUser({ commit }, { email, password }) {
+            try {
+                const data = await login(email, password);
+                commit('setAccessToken', data.access_token);
+            } catch (error) {
+                console.error(error);
+            }
+        }
     },
     getters: {
         getSpecialsList: state => state.specialsList,
         getNewsList: state => state.newsList,
-        getShowButton: state => state.showButton
+        getShowButton: state => state.showButton,
+        accessToken: state => state.accessToken
     },
 });
