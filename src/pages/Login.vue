@@ -40,10 +40,27 @@ export default {
     },
     methods: {
         async login() {
-            await this.$store.dispatch('loginUser', { email: this.formLogin.email, password: this.formLogin.password });
-            this.formLogin.email = '';
-            this.formLogin.password = '';
+            try {
+                await this.$store.dispatch('loginUser', { email: this.formLogin.email, password: this.formLogin.password });
+                this.formLogin.email = '';
+                this.formLogin.password = '';
+                this.error = null;
+
+
+                if (!this.error) {
+                    this.$router.push({ name: 'onlineBank' });
+                }
+            } catch (error) {
+                this.error = error.message;
+                if (error.response && error.response.status === 401) {
+
+                    console.error('Ошибка авторизации. Переход на страницу недоступен.');
+                    this.formLogin.email = '';
+                    this.formLogin.password = '';
+                }
+            }
         }
     }
+
 }
 </script>
