@@ -67,6 +67,19 @@ export const login = async (email, password) => {
     }
 };
 
+export const submitForm = (name, phone, email, consultations) => {
+    let url = `${apiList.apiUrl}${apiList.feedBack}?name=${name}&phone=${phone}`;
+
+    url += `&email=${email}`;
+    url += `&theme_consultation=${consultations}`;
+
+    return fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+};
 
 
 

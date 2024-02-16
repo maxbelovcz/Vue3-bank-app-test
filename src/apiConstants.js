@@ -5,5 +5,6 @@ export const apiList = {
     newsEndpoint: 'api/news?page=',
     currentPage: 1,
     register: 'api/auth/register',
-    login: 'api/auth/login'
+    login: 'api/auth/login',
+    feedBack: 'api/callback'
 };

@@ -4,7 +4,7 @@
             <div class="footer-wrapper">
                 <div class="footer-body">
                     <div class="contacts">
-                        <Logo></Logo>
+                        <Logo />
                         <div class="contacts__title">Контакты</div>
                         <div class="contacts__body">
                             <div class="contacts__item">{{ contacts[0].address }}</div>
@@ -13,22 +13,7 @@
                             <div class="contacts__item"><a href="#">{{ contacts[3].link }}</a></div>
                         </div>
                     </div>
-                    <form class="feedback" id="feedback-form">
-                        <div class="feedback__title">Получить консультацию</div>
-                        <div class="feedback__body">
-                            <input type="text" name="name" id="name" placeholder="Фамилия Имя Отчество">
-                            <input type="text" name="phone" id="phone" placeholder="Телефон">
-                            <input type="text" name="email" id="email" placeholder="Email">
-                            <select name="consultations" id="consultations">
-                                <option value="" selected hidden>Тема консультации</option>
-                                <option value="credits">Кредиты</option>
-                                <option value="mortgage">Ипотека</option>
-                                <option value="deposits">Вклады</option>
-                                <option value="currencyExchange">Обмен валют</option>
-                            </select>
-                        </div>
-                        <ButtonSubmit></ButtonSubmit>
-                    </form>
+                    <FeedbackForm />
                 </div>
                 <div class="copyright">© {{ copyright }}</div>
             </div>
@@ -38,14 +23,13 @@
 
 <script>
 import Logo from './Logo.vue';
-import ButtonSubmit from './ButtonSubmit.vue';
-
+import FeedbackForm from './FeedbackForm.vue';
 
 export default {
     name: 'main-footer',
     components: {
         Logo,
-        ButtonSubmit
+        FeedbackForm
     },
     data() {
         return {
