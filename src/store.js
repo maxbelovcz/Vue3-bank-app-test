@@ -8,7 +8,7 @@ export default createStore({
         specialsList: [],
         newsList: [],
         showButton: true,
-        accessToken: ''
+        accessToken: localStorage.getItem('accessToken') || ''
     },
     mutations: {
         setSpecialsList(state, data) {
@@ -22,6 +22,7 @@ export default createStore({
         },
         setAccessToken(state, token) {
             state.accessToken = token;
+            localStorage.setItem('accessToken', token);
         }
     },
     actions: {

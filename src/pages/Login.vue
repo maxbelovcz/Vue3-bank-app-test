@@ -46,20 +46,21 @@ export default {
                 this.formLogin.password = '';
                 this.error = null;
 
-
-                if (!this.error) {
+                if (localStorage.getItem('accessToken')) {
                     this.$router.push({ name: 'onlineBank' });
                 }
             } catch (error) {
-                this.error = error.message;
-                if (error.response && error.response.status === 401) {
-
-                    console.error('Ошибка авторизации. Переход на страницу недоступен.');
-                    this.formLogin.email = '';
-                    this.formLogin.password = '';
+                if (error.message === 'Ошибка во время авторизации') {
+                    this.error = 'Неверный email или пароль. Пожалуйста, попробуйте снова.';
+                } else {
+                    console.error('Ошибка авторизации:', error);
+                    this.error = 'Произошла ошибка при авторизации. Пожалуйста, попробуйте позже.';
                 }
+                this.formLogin.email = '';
+                this.formLogin.password = '';
             }
         }
+
     }
 
 }

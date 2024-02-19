@@ -39,7 +39,8 @@ const routes = [
     {
         path: '/onlineBank',
         name: 'onlineBank',
-        component: onlineBank
+        component: () => import('./pages/onlineBank.vue'),
+        meta: { requiresAuth: true }
     },
     {
         path: '/news/:newsId',
@@ -63,5 +64,15 @@ const router = createRouter({
     history: createWebHistory(),
     routes
 })
+
+router.beforeEach((to, from, next) => {
+    if (to.matched.some(record => record.meta.requiresAuth) && !localStorage.getItem('accessToken')) {
+        next({ name: 'Login' });
+    } else {
+        next();
+    }
+});
+
+
 
 export default router
