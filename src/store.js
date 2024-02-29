@@ -56,6 +56,7 @@ export default createStore({
                 commit('setAccessToken', data.access_token);
             } catch (error) {
                 console.error(error);
+                throw error;
             }
         }
     },

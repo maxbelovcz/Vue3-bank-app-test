@@ -50,12 +50,7 @@ export default {
                     this.$router.push({ name: 'onlineBank' });
                 }
             } catch (error) {
-                if (error.message === 'Ошибка во время авторизации') {
-                    this.error = 'Неверный email или пароль. Пожалуйста, попробуйте снова.';
-                } else {
-                    console.error('Ошибка авторизации:', error);
-                    this.error = 'Произошла ошибка при авторизации. Пожалуйста, попробуйте позже.';
-                }
+                console.error('Ошибка авторизации', error);
                 this.formLogin.email = '';
                 this.formLogin.password = '';
             }
