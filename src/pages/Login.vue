@@ -11,6 +11,9 @@
                             <input type="password" name="password" id="login-password"
                                 placeholder="Введите пароль (не менее 7 символов)" v-model="formLogin.password">
                             <button type="submit">Войти</button>
+                            <router-link to="/register">
+                                <button>Назад к регистрации</button>
+                            </router-link>
                         </form>
                     </div>
                 </div>

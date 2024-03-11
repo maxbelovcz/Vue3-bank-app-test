@@ -1,0 +1,68 @@
+.clients-data {
+    position: relative;
+    max-width: 100%;
+    padding: 200px 0px 40px 0px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+        & h1 {
+            color: black;
+            font-family: $PantonRegular;
+            font-size: 26px;
+            font-style: normal;
+            line-height: normal;
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 50%;
+        & input {
+            text-align: center;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            padding: 10px 15px;
+            width: calc(100% - 20px);
+            color: white;
+            font-family: $PantonRegular;
+            font-size: 16px;
+            font-style: normal;
+            line-height: normal;
+            background-color: blue;
+        }
+        & input::placeholder{
+            color: white;
+            font-family: $PantonRegular;
+            font-size: 16px;
+            font-style: normal;
+            line-height: normal;
+        }
+        & input:focus::placeholder{
+            color: transparent;
+        }
+        & h2 {
+            color: black;
+            font-family: $PantonRegular;
+            font-size: 26px;
+            font-style: normal;
+            line-height: normal;
+        }
+    }
+}
+.credit-rating {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px 15px;
+    width: calc(100% - 20px);
+    color: black;
+    font-family: $PantonRegular;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    background-color: white;
+}

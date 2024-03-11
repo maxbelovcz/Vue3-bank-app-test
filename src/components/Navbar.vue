@@ -6,7 +6,7 @@
             <li><a href="/mortgage">Ипотека</a></li>
             <li><a href="/deposits">Вклады</a></li>
             <li><a href="/currencyExchange">Обмен валют</a></li>
-            <li><a href="/onlineBank">Онлайн Банк</a></li>
+            <li><a href="/register">Онлайн Банк</a></li>
         </ul>
     </nav>
 </template>

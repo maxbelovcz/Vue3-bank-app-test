@@ -7,7 +7,9 @@
                     <h1>{{ item.name }}</h1>
                     <p>{{ item.description }}</p>
                     <div class="special-item__buttons">
-                        <MainButton />
+                        <router-link to="/register">
+                            <MainButton />
+                        </router-link>
                         <a href="#feedback-form">Узнать подробнее</a>
                     </div>
                 </div>

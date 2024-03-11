@@ -15,6 +15,9 @@
                             <input type="password" name="password_confirmation" id="password_confirmation"
                                 placeholder="Повторите пароль" v-model="formData.password_confirmation">
                             <button type="submit">Зарегистрироваться</button>
+                            <router-link to="/login">
+                                <button>Войти</button>
+                            </router-link>
                         </form>
                     </div>
                 </div>
