@@ -1,8 +1,6 @@
 .footer{
     position: relative;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
+    max-width: 100%;
     padding-top: 40px;
 }
 .footer-wrapper {
@@ -32,7 +30,6 @@
     width: 48%;
     &__title {
         color: white;
-        font-family: $PantonRegular;
         font-size: 28px;
         font-style: normal;
         line-height: normal;
@@ -48,7 +45,6 @@
     }
     &__item {
         color: white;
-        font-family: $PantonRegular;
         font-size: 16px;
         font-style: normal;
         line-height: normal;
@@ -56,7 +52,6 @@
     }
     &__item a{
         color: white;
-        font-family: $PantonRegular;
         font-size: 16px;
         font-style: normal;
         line-height: normal;
@@ -78,7 +73,6 @@
     width: 48%;
     &__title {
         color: white;
-        font-family: $PantonRegular;
         font-size: 22px;
         font-style: normal;
         line-height: normal;
@@ -95,16 +89,16 @@
             outline: none;
             border-radius: 8px;
             padding: 10px 15px;
-            width: calc(80% - 20px);
+            width: 100%;
             color: black;
-            font-family: $PantonRegular;
+            font-family: "Panton";
+            font-weight: 400;
             font-size: 16px;
             font-style: normal;
             line-height: normal;
         }
         & input::placeholder{
             color: black;
-            font-family: $PantonRegular;
             font-size: 16px;
             font-style: normal;
             line-height: normal;
@@ -117,16 +111,18 @@
             outline: none;
             border-radius: 8px;
             padding: 10px 15px;
-            width: calc(81.5%);
+            width: 100%;
             color: black;
-            font-family: $PantonRegular;
+            font-family: "Panton";
+            font-weight: 400;
             font-size: 16px;
             font-style: normal;
             line-height: normal;
         }
         & select option{
             color: black;
-            font-family: $PantonRegular;
+            font-family: "Panton";
+            font-weight: 400;
             font-size: 16px;
             font-style: normal;
             line-height: normal;
@@ -136,7 +132,6 @@
 .copyright{
     margin-top: 30px;
     color: white;
-    font-family: $PantonRegular;
     font-size: 16px;
     font-style: normal;
     line-height: normal;

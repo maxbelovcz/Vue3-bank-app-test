@@ -14,12 +14,11 @@
     justify-content: space-between;
     flex-direction: column;
     gap: 30px;
-    width: calc(100% - 60px);
+    width: 100%;
     padding: 20px 30px;
 }
 .article-title {
     color: white;
-    font-family: $PantonRegular;
     font-size: 30px;
     font-style: normal;
     line-height: normal;
@@ -30,19 +29,12 @@
     align-items: flex-start;
     gap: 30px;
     width: 100%;
-    & p{
-        color: white;
-        text-align: left;
-        font-family: $PantonRegular;
-        font-size: 22px;
-        font-style: normal;
-        line-height: normal;
-    }
+    
 }
 .article-img {
     position: relative;
-    width: 48%;
-    min-width: 420px;
+    width: 100%;
+    max-width: 420px;
     overflow: hidden;
     border-radius: 10px;
     & img{
@@ -50,5 +42,15 @@
         height: 100%;
         object-fit: cover;
     }
+}
+.article-text {
+    display: flex;
+    max-width: 740px;
+    width: 100%;
+    color: white;
+    text-align: left;
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
 }
 

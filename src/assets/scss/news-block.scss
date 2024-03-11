@@ -7,7 +7,6 @@
 }
 .news-title {
     color: white;
-    font-family: $PantonRegular;
     font-size: 26px;
     font-style: normal;
     line-height: normal;
@@ -25,7 +24,7 @@
     position: relative;
     align-items: center;
     flex-direction: column;
-    width: 31%;
+    width: 30%;
     height: auto;
     border-radius: 8px;
     background: purple;
@@ -33,7 +32,6 @@
     gap: 20px;
     & a {
         color: white;
-        font-family: $PantonRegular;
         font-size: 16px;
         font-style: normal;
         line-height: normal;
@@ -66,15 +64,16 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
-    width: calc(100% - 30px);
+    width: 100%;
     gap: 20px;
 }
 .news-item__title{
     color: whitesmoke;
-    font-family: $CormorantInfantBold;
+    font-family: "Cormorant-Infant";
     font-size: 20px;
     font-style: normal;
     line-height: normal;
+    font-weight: 700;
 }
 .news-item__text{
     & p{
@@ -85,8 +84,9 @@
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         color: whitesmoke;
-        font-family: $CormorantInfant;
+        font-family: "Cormorant-Infant";
         font-size: 16px;
+        font-weight: 400;
         font-style: normal;
         line-height: normal;
     }

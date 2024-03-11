@@ -2,11 +2,15 @@
 @import './fonts.scss';
 @import './mixins.scss';
 /*--------------------------------------------html,body-----------------------------------*/
+* {
+    box-sizing: border-box;
+}
 html, body{
     height: 100%;
     scroll-behavior: smooth;
 }
 body{
+    font-family: "Panton";
     background-color: #F5F5F5;
     font-weight: 400;
 }

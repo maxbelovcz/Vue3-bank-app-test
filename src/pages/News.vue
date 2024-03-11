@@ -9,7 +9,7 @@
                             <h2 class="article-title">{{ selectedNews.title }}</h2>
                             <div class="article-body">
                                 <div class="article-img"><img :src="selectedNews.img" alt=""></div>
-                                <p>{{ selectedNews.content }}</p>
+                                <div class="article-text">{{ selectedNews.content }}</div>
                             </div>
                         </article>
                     </div>

@@ -21,7 +21,6 @@
     gap: 25px;
     & h2 {
         color: white;
-        font-family: $PantonRegular;
         font-size: 30px;
         font-style: normal;
         line-height: normal;
@@ -32,16 +31,16 @@
         outline: none;
         border-radius: 8px;
         padding: 10px 15px;
-        width: calc(80% - 20px);
+        width: 80%;
         color: black;
-        font-family: $PantonRegular;
+        font-family: "Panton";
+            font-weight: 400;
         font-size: 16px;
         font-style: normal;
         line-height: normal;
     }
     & input::placeholder{
         color: black;
-        font-family: $PantonRegular;
         font-size: 16px;
         font-style: normal;
         line-height: normal;
@@ -57,7 +56,8 @@
         justify-content: center;
         background-color: white;
         color: black;
-        font-family: $PantonRegular;
+        font-family: "Panton";
+            font-weight: 400;
         font-size: 16px;
         font-style: normal;
         line-height: normal;
