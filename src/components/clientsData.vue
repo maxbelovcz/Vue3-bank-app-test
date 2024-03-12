@@ -17,9 +17,9 @@
                         placeholder="Трудовой стаж на последнем месте, месяцев">
                     <input type="text" name="client-salary" id="client-salary"
                         placeholder="Среднемесячный доход за последние 6 месяцев">
-                    <ButtonSave />
-                    <div class="credit-rating">0</div>
                 </form>
+                <ButtonSave />
+                <div class="credit-rating">Кредитный рейтинг</div>
                 <onlineApp />
             </div>
         </div>

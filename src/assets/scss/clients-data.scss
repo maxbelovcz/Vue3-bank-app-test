@@ -13,20 +13,22 @@
             font-size: 26px;
             font-style: normal;
             line-height: normal;
+            text-transform: uppercase;
         }
     }
     &__form {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 25px;
-        width: 50%;
+        width: 100%;
         & input {
             text-align: center;
             border: none;
             outline: none;
             border-radius: 8px;
             padding: 10px 15px;
-            width: 100%;
+            width: 48.5%;
             color: white;
             font-family: "Panton";
             font-size: 16px;
@@ -43,12 +45,6 @@
         & input:focus::placeholder{
             color: transparent;
         }
-        & h2 {
-            color: black;
-            font-size: 26px;
-            font-style: normal;
-            line-height: normal;
-        }
     }
 }
 .credit-rating {
@@ -56,7 +52,7 @@
     border: 2px solid black;
     border-radius: 8px;
     padding: 10px 15px;
-    width: 100%;
+    width: 48.5%;
     color: black;
     font-size: 16px;
     font-style: normal;
