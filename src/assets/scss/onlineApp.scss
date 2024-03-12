@@ -1,0 +1,96 @@
+.online-application {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    & h2 {
+        color: black;
+        font-size: 26px;
+        font-style: normal;
+        line-height: normal;
+    }
+    &__form{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 30px;
+    }
+    &__details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 48%;
+        gap: 30px;
+    
+        & select {
+            text-align: center;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            padding: 10px 15px;
+            width: 100%;
+            color: white;
+            font-family: "Panton";
+            font-weight: 400;
+            font-size: 16px;
+            font-style: normal;
+            line-height: normal;
+            background-color: green;
+        }
+        & select option{
+            color: white;
+            font-family: "Panton";
+            font-weight: 400;
+            font-size: 16px;
+            font-style: normal;
+            line-height: normal;
+            background-color: white;
+            color: black;
+        }
+        & select option:checked {
+            background-color: green;
+            color: white;
+        }
+        & input {
+            text-align: center;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            padding: 10px 15px;
+            width: 100%;
+            color: white;
+            font-family: "Panton";
+            font-size: 16px;
+            font-style: normal;
+            line-height: normal;
+            background-color: green;
+        }
+        & input::placeholder{
+            color: white;
+            font-size: 16px;
+            font-style: normal;
+            line-height: normal;
+        }
+        & input:focus::placeholder{
+            color: transparent;
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 48%;
+        gap: 30px;
+        & a {
+            color: black;
+            font-size: 20px;
+            font-style: normal;
+            line-height: normal;
+            text-decoration: none;
+        }
+        & a:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -7,6 +7,7 @@
                     <input type="text" name="client-name" id="client-name" placeholder="Фамилия Имя Отчество">
                     <input type="text" name="client-age" id="client-age" placeholder="Возраст, полных лет">
                     <input type="text" name="client-address" id="client-address" placeholder="Адрес регистрации">
+                    <input type="text" name="client-phone" id="client-phone" placeholder="Номер телефона">
                     <input type="text" name="client-inn" id="client-inn" placeholder="ИНН">
                     <input type="text" name="client-work" id="client-work" placeholder="Место работы">
                     <input type="text" name="client-employer" id="client-employer" placeholder="ИНН работодателя">
@@ -19,14 +20,16 @@
                     <ButtonSave />
                     <div class="credit-rating">0</div>
                 </form>
+                <onlineApp />
             </div>
         </div>
     </section>
 </template>
 <script>
 import ButtonSave from '../components/ButtonSave.vue';
+import onlineApp from '../components/onlineApp.vue';
 export default {
     name: 'clientsData',
-    components: { ButtonSave }
+    components: { ButtonSave, onlineApp }
 }
 </script>
